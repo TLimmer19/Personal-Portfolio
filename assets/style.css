@@ -48,7 +48,7 @@ main > div img {
 main > div > h2 {
    font-size: 1.5rem;
    padding: .25rem;
-   position:relative;
+   position: relative;
    color: white;
    bottom: 5vh;
    right: 0;
@@ -72,8 +72,14 @@ main section ul li >  {
 }
 
 #about-me h1 {
+    display: block;
+    color: #445876;
+    text-align: right;
     flex: 0 0 15%;
     border-right: 3px solid;
+    font-size: 200%;
+    width: 20%;
+    padding-right: .7vw;
     /* text-align: right; */
 }
 
@@ -87,16 +93,48 @@ main section ul li >  {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-#work h1 {
-    flex: 0 0 15%;
-    border-right: 3px solid;
-    /* text-align: right; */
-}
-
 #work div {
     flex: 0 0 75%
 }
+
+#work h1 {
+    display: block;
+    color: #445876;
+    text-align: right;
+    flex: 0 0 15%;
+    border-right: 3px solid;
+    font-size: 200%;
+    width: 20%;
+    padding-right: .7vw;
+    /* text-align: right; */
+}
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact-me div {
+    flex: 0 0 75%
+}
+
+#contact-me h1 {
+    display:block;
+    color: #445876;
+    text-align: right;
+    flex: 0 0 15%;
+    border-right: 3px solid;
+
+    font-size: 200%;
+    width: 20%;
+    padding-right: .7vw;
+    /* text-align: right; */
+}
+
+
+
+
+
 
 .project-container {
     min-height: 140px;
@@ -131,6 +169,30 @@ main section ul li >  {
     background-image: url("./password-generator.png");
     background-size: cover;
 }
+.windows95{
+    background-image: url("./windows95.png");
+    background-size: cover;
+}
+
+.contact-me ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.contact-me ul li, .contact-me ul li a{
+    text-decoration: underline;
+    text-decoration-color: #445876;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
 /* .project-card {
     display:flex;
     overflow: hidden;
