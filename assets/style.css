@@ -1,3 +1,8 @@
+header {
+    background-color: #2142d4;
+    display:flex;
+    justify-content: space-between;
+}
 
 header h1 {
     color: blueviolet;
@@ -15,17 +20,25 @@ header div {
     font-size: 20px;
 }
 
-header div ul {
+header ul {
     list-style-type: none;
     text-align: right;
     display: flex;
 }
 
-header div ul li {
+header ul li {
     display: left;
     margin-left: 25px;
     text-align: right;
 }
+header ul li a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+
 main > div img {
     display: flex;
     align-items: none;
@@ -35,15 +48,13 @@ main > div img {
 main > div > h2 {
    font-size: 1.5rem;
    padding: .25rem;
-   position:absolute;
-   bottom: 2vh;
+   position:relative;
+   color: white;
+   bottom: 5vh;
    right: 0;
 }
-main section div {
-    color:black;
-}
 
-main section ul {
+/* main section ul {
     display:flex;
     justify-content: space-evenly;
     align-items:center;
@@ -51,14 +62,78 @@ main section ul {
 }
 main section ul li >  {
     color:black;
+} */
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.project-card {
+
+#about-me h1 {
+    flex: 0 0 15%;
+    border-right: 3px solid;
+    /* text-align: right; */
+}
+
+#about-me div {
+    flex: 0 0 75%
+}
+
+#work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work h1 {
+    flex: 0 0 15%;
+    border-right: 3px solid;
+    /* text-align: right; */
+}
+
+#work div {
+    flex: 0 0 75%
+}
+
+.project-container {
+    min-height: 140px;
+    max-height: 140px;
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+.project-container h3 {
+    display: inline;
+    position: relative;
+    padding: 20px;
+    top: 10vh;
+    background-color: royalblue;
+}
+
+.project-container h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.led-wall {
+    background-image: url("./led-wall.png");
+    background-size: cover;
+}
+
+.run-buddy{
+    background-image: url("./run-buddy.png");
+    background-size: cover;
+}
+/* .project-card {
     display:flex;
     overflow: hidden;
     margin: 0rem 1% 1% 0rem;
     width:48%;
     border:blueviolet;
-    filter:opacity(50%)
+    filter:opacity(50%);
     transition: all 0.25s;
 }
 .project-card img {
@@ -75,7 +150,7 @@ main section ul li >  {
     bottom: 2vh;
     left: 0;
     background: blueviolet;
-}
+} */
 #card-holder {
     display: flex;
     flex-wrap: wrap;
