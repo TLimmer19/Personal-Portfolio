@@ -119,12 +119,16 @@ main section ul li >  {
 }
 
 .led-wall {
-    background-image: url("./led-wall.png");
+    background-image: url("./Stargazers.png");
     background-size: cover;
 }
 
 .run-buddy{
-    background-image: url("./run-buddy.png");
+    background-image: url("./WW2.png");
+    background-size: cover;
+}
+.password-generator{
+    background-image: url("./password-generator.png");
     background-size: cover;
 }
 /* .project-card {
